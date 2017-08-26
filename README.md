@@ -7,5 +7,5 @@
 
 * Run in development
   * Install dependencies `npm install`
-  * Run `http-server`
+  * Run `http-server --cors='Access-Control-Allow-Origin'`
   * Open in browser `http://127.0.0.1:8080`

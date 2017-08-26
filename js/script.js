@@ -1,8 +1,15 @@
+// Scroll event handlers
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 140) {
+    $('header').fadeOut();
+  }
+});
+
 $(".analyse").click(function() {
   var base64Data = $('.awesome-cropper').children('img').attr('src');
   $.ajax({
-    url: "/api/todo",
-    type: 'GET',
+    url: "http://127.0.0.1:5000/api/v1.0/image", // Flask API endpoint
+    type: 'POST',
     data: base64Data,
     success: function (response) {
       $('.analyse-status').html('<strong>Success</strong>');

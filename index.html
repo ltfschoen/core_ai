@@ -13,11 +13,10 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Core AI</a>
+        <img src="./images/coreai_small.png" class="logo-small" alt="Core AI Logo"><a class="navbar-brand" href="#">Core AI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +34,7 @@
               <a class="nav-link" href="#">Services</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="mailto:ltfschoen@gmail.com">Contact</a>
             </li>
           </ul>
         </div>
@@ -61,29 +60,29 @@
         <div class="col-lg-6 col-md-6 mb-4">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Processing</h4>
+              <h4 class="card-title">Step 1: Processing</h4>
               <p class="card-text">
-                Select a core sample image from your device to crop its dimensions.
+                Click this button to select a core sample image from your device and crop its dimensions.
                 <form role="form">
                   <input id="demo" type="hidden" name="test[image]">
                 </form>
               </p>
             </div>
-            <img class="card-img-bottom" src="http://placehold.it/500x325" alt="">
+            <img class="card-img-bottom" src="http://placehold.it/500x150" alt="">
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
             <div class="card-body">
-              <h4 class="card-title">Simplification, Detection, and Presentation</h4>
+              <h4 class="card-title">Step 2: Simplification, Detection, and Presentation</h4>
               <p class="card-text">
-                After pre-processing into a cropped image, upload it to detect characteristic shapes of any defects.
+                After cropping your image, click this button to upload it and and we'll detect characteristic shapes (ellipses) of any defects.
               </p>
-              <p><a href="#" class="btn btn-success analyse">Analyse Defects</a></p>
+              <p><button class="btn btn-success analyse">Analyse Defects</button></p>
               <p class="analyse-status"></p>
             </div>
+            <img class="card-img-bottom" src="http://placehold.it/500x150" alt="">
           </div>
         </div>
       </div>

@@ -1,8 +1,32 @@
 body {
   padding-bottom: 40px;
+  background-image: url('../images/coreai_transparent.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img.logo-small {
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+img.logo-small:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 .container-narrow {
   margin: 150px auto 50px auto;
   max-width: 728px;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+      padding: 1rem 2rem !important;
+  }
 }
