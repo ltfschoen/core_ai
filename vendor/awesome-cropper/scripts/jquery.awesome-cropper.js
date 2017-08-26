@@ -19,7 +19,7 @@
     };
     $inputAttachTo = $(inputAttachTo);
     input = function(type) {
-      return $("<input type = \"" + type + "\" />");
+      return $("<label class=\"btn btn-primary\">Upload Core Sample<input type = \"" + type + "\" hidden/></label>");
     };
     div = function() {
       return $("<div/>");
