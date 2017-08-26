@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Luke Schoen">
     <title>Core AI</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -10,14 +13,90 @@
   </head>
 
   <body>
-    <div class="container-narrow">
-      <div>
-        <h1>Core AI</h1>
-        <form role="form">
-          <input id="demo" type="hidden" name="test[image]">
-        </form>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Core AI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-narrow">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+       <h1 class="display-3">Welcome to Core AI!</h1>
+       <p class="lead">
+         The easiest place to get an instant analysis of your core sample photos.
+       </p>
+       <a href="#" class="btn btn-primary btn-lg">Upload an image</a>
+      </header>
+
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Processing</h4>
+              <p class="card-text">
+                Select a core sample image from your device to crop its dimensions.
+                <form role="form">
+                  <input id="demo" type="hidden" name="test[image]">
+                </form>
+              </p>
+            </div>
+            <img class="card-img-bottom" src="http://placehold.it/500x325" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Simplification, Detection, and Presentation</h4>
+              <p class="card-text">
+                After pre-processing into a cropped image, upload it to detect characteristic shapes of any defects.
+              </p>
+              <p><a href="#" class="btn btn-success">Analyse Defects</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
     </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Core AI 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
     <!-- https://github.com/HubSpot/tether -->
     <!-- https://github.com/odyniec/imgareaselect -->

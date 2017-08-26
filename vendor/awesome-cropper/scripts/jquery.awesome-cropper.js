@@ -19,7 +19,7 @@
     };
     $inputAttachTo = $(inputAttachTo);
     input = function(type) {
-      return $("<label class=\"btn btn-primary\">Upload Core Sample<input type = \"" + type + "\" hidden/></label>");
+      return $("<label class=\"btn btn-primary\">Load Core Sample<input type = \"" + type + "\" hidden/></label>");
     };
     div = function() {
       return $("<div/>");
@@ -50,7 +50,7 @@
       'aria-valuenow': "60",
       'aria-valuemin': "0",
       'aria-valuemax': "100",
-      style: "width: 50%;"
+      style: "width: 50%; display: none;"
     }));
     $container.append($progressBar);
     $resultIm = image();
