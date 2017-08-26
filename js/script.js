@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  $('#demo').awesomeCropper(
-    { width: 150, height: 150, debug: true }
-  );
+  $('#demo').awesomeCropper({
+    width: 200,
+    height: 1000,
+    debug: true
+  });
 });

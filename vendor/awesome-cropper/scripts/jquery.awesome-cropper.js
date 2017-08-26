@@ -50,7 +50,7 @@
       'aria-valuenow': "60",
       'aria-valuemin': "0",
       'aria-valuemax': "100",
-      style: "width: 60%;"
+      style: "width: 50%;"
     }));
     $container.append($progressBar);
     $resultIm = image();
@@ -60,9 +60,18 @@
     $cancelButton = a('Cancel').addClass('btn btn-danger').attr({
       'data-dismiss': "modal"
     });
-    $imagesContainer = div().append(div().addClass('modal-dialog').append(div().addClass('modal-content').append(div().addClass('modal-body').append(div().addClass('col-md-9').append($sourceIm)).append(div().addClass('col-md-3').append($cropSandbox)).append(div().addClass('clearfix')), div().addClass('modal-footer').append(div().addClass('btn-group').append($cancelButton).append($applyButton))))).addClass('modal').attr({
-      role: 'dialog'
-    });
+    $imagesContainer = div().append(div().addClass('modal-dialog')
+                              .append(div().addClass('modal-content')
+                                .append(div().addClass('modal-body')
+                                  .append(div().addClass('d-flex justify-content-end')
+                                    .append(div().addClass('mr-auto p-2').append($sourceIm))
+                                    .append(div().addClass('p-2').append($cropSandbox))
+                                    .append(div().addClass('clearfix'))),
+                       div().addClass('modal-footer')
+                              .append(div().addClass('btn-group').append($cancelButton).append($applyButton)))))
+                                .addClass('modal').attr({
+                                  role: 'dialog'
+                                });
     $container.append($imagesContainer);
     removeAreaSelect = function(image) {
       return image.imgAreaSelect({
