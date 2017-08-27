@@ -1,3 +1,6 @@
+var showSpinner = function() { $('.loading-icon').show(); }
+var hideSpinner = function() { $('.loading-icon').hide(); }
+
 // Scroll event handlers
 $(window).scroll(function() {
   if ($(this).scrollTop() > 140) {
@@ -7,34 +10,39 @@ $(window).scroll(function() {
 
 $(".analyse").click(function() {
   var base64Data = $('.awesome-cropper').children('img').attr('src');
+  showSpinner();
   $.ajax({
     url: "http://127.0.0.1:5000/api/v1.0/image", // Flask API endpoint
     type: 'POST',
     data: base64Data,
     success: function (response) {
-      $('.analyse-status').html('<strong>Success</strong>');
+      $('#results').html('<strong>' + response + '</strong>');
       console.log("success: ", response);
+      hideSpinner();
     },
     complete: function (response) {
-      $('.analyse-status').html('<strong>Complete</strong>');
+      $('#results').html('<strong>' + response + '</strong>');
       console.log("complete: ", response);
+      hideSpinner();
     },
     error: function (error) {
-      $('.analyse-status').html('<strong>Error</strong>');
+      $('#results').html('<strong>' + response + '</strong>');
       console.log("error: ", error);
+      hideSpinner();
     }
   });
 });
 
 $("#demo").click(function () {
-  $('.analyse-status').html('');
+  $('#results').html('');
 });
 
 $(document).ready(function () {
+  hideSpinner();
   $('#demo').awesomeCropper({
     width: 200,
     height: 1000,
     debug: true
   });
-  $('.analyse-status').html('');
+  $('#results').html('');
 });

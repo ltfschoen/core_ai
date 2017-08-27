@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="./vendor/imgareaselect/css/imgareaselect-default.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="./vendor/awesome-cropper/css/jquery.awesome-cropper.css">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -46,18 +47,17 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-       <h1 class="display-3">Welcome to Core AI!</h1>
+       <h1 class="display-3">Core Sample Analysis</h1>
        <p class="lead">
          The easiest place to get an instant analysis of your core sample photos.
        </p>
        <!-- <a href="#" class="btn btn-primary btn-lg">Upload an image</a> -->
       </header>
 
-
       <!-- Page Features -->
       <div class="row text-center">
 
-        <div class="col-lg-6 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h4 class="card-title">Step 1: Processing</h4>
@@ -67,12 +67,16 @@
                   <input id="demo" type="hidden" name="test[image]">
                 </form>
               </p>
+              <p>
+                <i class="fa fa-upload fa-4x icons-grey" aria-hidden="true"></i>&nbsp;&nbsp;
+                <i class="fa fa-crop fa-4x icons-grey" aria-hidden="true"></i>
+              </p>
             </div>
-            <img class="card-img-bottom" src="http://placehold.it/500x150" alt="">
+            <img class="card-img-bottom" src="./images/quarry.png" alt="">
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h4 class="card-title">Step 2: Simplification, Detection, and Presentation</h4>
@@ -80,9 +84,29 @@
                 After cropping your image, click this button to upload it and and we'll detect characteristic shapes (ellipses) of any defects.
               </p>
               <p><button class="btn btn-success analyse">Analyse Defects</button></p>
-              <p class="analyse-status"></p>
+              <p>
+                <i class="fa fa-cloud-upload fa-4x icons-grey" aria-hidden="true"></i>&nbsp;&nbsp;
+                <i class="fa fa-eye fa-4x icons-grey" aria-hidden="true"></i>
+              </p>
             </div>
-            <img class="card-img-bottom" src="http://placehold.it/500x150" alt="">
+            <img class="card-img-bottom" src="./images/core.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Step 3: Review Advice</h4>
+              <p class="card-text">
+                Review analysis results and proposed mitigation measures.
+              </p>
+              <p>
+                <h4>Results<h4>
+                <div class="loading-icon icons-orange"></div>
+                <div id="results">
+                </div>
+              </p>
+            </div>
           </div>
         </div>
       </div>

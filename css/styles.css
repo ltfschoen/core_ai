@@ -25,6 +25,36 @@ img.logo-small:hover {
   max-width: 728px;
 }
 
+div.card {
+  border: 0px;
+}
+
+.icons-grey {
+  color: #bbbbbb;
+}
+
+.icons-orange {
+  color: #ffb25f;
+}
+
+/* Spinner */
+.loading-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.loading-icon:before {
+  content: "\f110";
+  font-family: FontAwesome;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+}
+
 @media (min-width: 576px) {
   .jumbotron {
       padding: 1rem 2rem !important;
