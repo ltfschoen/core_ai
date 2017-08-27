@@ -45,7 +45,7 @@ def get_query():
 def post_image():
     """
     Examples:
-        curl -F "data=@images/core_tray_6.jpg.jpg" http://127.0.0.1:5000/api/v1.0/image
+        curl -F "data=@images/core_tray_6.jpg" http://127.0.0.1:5000/api/v1.0/image
 
         Note: Server responds to above with: `Image is: <PIL.JpegImagePlugin.JpegImageFile image mode=L size=1134x2016 at 0x10BAAEA20>`
     """
