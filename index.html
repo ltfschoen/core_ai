@@ -49,7 +49,16 @@
       <header class="jumbotron my-4">
        <h1 class="display-3">Core Sample Analysis</h1>
        <p class="lead">
-         The easiest place to get an instant analysis of your core sample photos.
+         <i>Easily get instant analysis of your drill core sample photos</i>
+       </p>
+
+       <p>
+         We provide you with in-field app that identifies structural features in core rock samples:
+         <ol class="features">
+           <li><i class="fa fa-check-square-o fa-2x icons-green" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Detects features on a drill core segment using algorithms</li>
+           <li><i class="fa fa-check-square-o fa-2x icons-green" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Projects selected features into 3-Dimensions</li>
+           <li><i class="fa fa-check-square-o fa-2x icons-green" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Reports orientation as a stereograph</li>
+         </ol>
        </p>
        <!-- <a href="#" class="btn btn-primary btn-lg">Upload an image</a> -->
       </header>
@@ -96,14 +105,26 @@
         <div class="col-lg-4 col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Step 3: Review Advice</h4>
+              <h4 class="card-title">Step 3: Review Results</h4>
               <p class="card-text">
-                Review analysis results and proposed mitigation measures.
+                Review analysis results and fine-tune.
               </p>
               <p>
                 <h4>Results<h4>
+                <hr>
                 <div class="loading-icon icons-orange"></div>
                 <div id="results">
+                  <p><b>Stereograph Output Data</b></p>
+                  <p>
+                    <select class="selectpicker" data-style="btn-info" data-selected-text-format="count" multiple title="Select ellipses to retain (index,Z,alpha,beta">
+                      <option>0,129,28.65,314.59</option>
+                      <option>1,130,28.65,314.59</option>
+                    </select>
+                  </p>
+                  <p><button class="btn btn-success retain">Retain Defects</button></p>
+                  <hr>
+                  <p><b>Stereograph Output Image</b></p>
+                  <span><img id="fake-image" src="./images/1_basic.png" alt=""></span>
                 </div>
               </p>
             </div>

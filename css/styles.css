@@ -8,6 +8,14 @@ body {
   background-attachment: fixed;
 }
 
+.lead {
+  text-align: center;
+}
+
+.features {
+  list-style: none;
+}
+
 img.logo-small {
   width: 50px;
   height: auto;
@@ -37,6 +45,10 @@ div.card {
   color: #ffb25f;
 }
 
+.icons-green {
+  color: #28a745;
+}
+
 /* Spinner */
 .loading-icon {
   position: relative;
@@ -53,6 +65,15 @@ div.card {
   font-size: 50px;
   position: absolute;
   top: 0;
+}
+
+#fake-image {
+  width: 150px;
+  height: auto;
+}
+
+.selectpicker {
+  font-size: 14px;
 }
 
 @media (min-width: 576px) {
