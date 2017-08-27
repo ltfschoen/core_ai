@@ -4,7 +4,7 @@
   "description": "crop images of geological core samples and detect cracks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": ""
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ltfschoen/core_ai/issues"
   },
-  "homepage": "https://github.com/ltfschoen/core_ai#readme"
+  "homepage": "https://github.com/ltfschoen/core_ai#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
 }

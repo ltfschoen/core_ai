@@ -1,1 +1,1 @@
-web: http-server --cors='Access-Control-Allow-Origin';
+web: npm install; http-server --cors='Access-Control-Allow-Origin';
