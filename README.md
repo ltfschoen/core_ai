@@ -1,9 +1,6 @@
-## Core AI
+## Core AI Client
 
-* Run API server
-  * Install dependencies `pip install -r requirements.txt`
-  * Run `python api/server.py`
-  * Note: Server loads at http://localhost:5000
+* Run Core API server
 
 * Run in development
   * Install dependencies `npm install`
