@@ -76,6 +76,12 @@ div.card {
   font-size: 14px;
 }
 
+#selectpicker-label {
+  font-size: 12px;
+  color: #cf8230;
+  font-weight: bold;
+}
+
 @media (min-width: 576px) {
   .jumbotron {
       padding: 1rem 2rem !important;
